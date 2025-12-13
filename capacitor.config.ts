@@ -1,14 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.psjdbd.liquidglass',
+  appId: 'com.psjdbd.liquidglass.v2',
   appName: 'LiquidGlassCamera',
-  webDir: 'dist',
-  bundledWebRuntime: false,
-
-  android: {
-    allowMixedContent: true
-  }
+  webDir: 'dist'
 };
 
 export default config;
