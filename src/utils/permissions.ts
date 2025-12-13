@@ -5,9 +5,6 @@ import { Capacitor } from '@capacitor/core';
 export async function requestAllPermissions() {
   if (!Capacitor.isNativePlatform()) return;
 
-  await Camera.requestPermissions({
-    permissions: ['camera', 'photos']
-  });
-
+  await Camera.requestPermissions();
   await Filesystem.requestPermissions();
 }
